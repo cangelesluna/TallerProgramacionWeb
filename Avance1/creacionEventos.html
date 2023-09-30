@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Evento</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 300px; margin: 0 auto; }
+        footer { display: flex; justify-content: space-between; padding: 20px 0; }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Creacion de Eventos</h1>
+    <div class="container">
+        <h2>Crear Evento</h2>
+        <form>
+            <label>Nombre del Evento:</label>
+            <input type="text" required>
+            <label>Fecha:</label>
+            <input type="date" required>
+            <label>Descripción:</label>
+            <textarea required></textarea>
+            <label>Imagen del Evento:</label>
+            <input type="file">
+            <input type="submit" value="Crear Evento">
+        </form>
+    </div>
+    <footer>
+        <button onclick="location.href='paginaEventos.html'">Pagina de Eventos</button>
+        <button onclick="location.href='configuracionCuenta.html'">Configuracion de Cuenta</button>
+    </footer>
+</body>
+</html>

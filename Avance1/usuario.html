@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Panel de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        nav {
+            width: 250px;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #e6e6e6;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #888;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #777;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        footer button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ddd;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        footer button:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Panel de usuario</h1>
+    <div class="wrapper">
+        <!-- Menú lateral -->
+        <nav>
+            <ul>
+                <li><a href="mensajeChat.html">Mensajería</a></li>
+                <li><a href="perfilUsuario.html">Ver Perfil</a></li>
+                <li><a href="configuracionCuenta.html">Configuración</a></li>
+                <li><a href="inicio.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div class="container">
+            <h2>Bienvenido, [Nombre del Usuario]</h2>
+            <div class="post">
+                <h3>Titulo de la Publicación</h3>
+                <p>Contenido de la publicación...</p>
+            </div>
+            <div class="post">
+                <h3>Titulo de otra Publicación</h3>
+                <p>Contenido de la publicación...</p>
+            </div>
+            <!-- Más publicaciones... -->
+        </div>
+    </div>
+
+    <footer>
+        <button onclick="location.href='registro.html'">Registro</button>
+        <button onclick="location.href='perfilUsuario.html'">Perfil de Usuario</button>
+    </footer>
+</body>
+
+</html>
+

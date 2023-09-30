@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Grupo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 300px; margin: 0 auto; }
+        footer { display: flex; justify-content: space-between; padding: 20px 0; }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Creacion de Grupos</h1>
+    <div class="container">
+        <h2>Crear Grupo</h2>
+        <form>
+            <label>Nombre del Grupo:</label>
+            <input type="text" required>
+            <label>Descripción:</label>
+            <textarea required></textarea>
+            <label>Imagen del Grupo:</label>
+            <input type="file">
+            <input type="submit" value="Crear Grupo">
+        </form>
+    </div>
+    <footer>
+        <button onclick="location.href='gruposComunidades.html'">Grupo de Comunidades</button>
+        <button onclick="location.href='paginaEventos.html'">Pagina de eventos</button>
+    </footer>
+</body>
+</html>

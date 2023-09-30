@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuración de Cuenta</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .container { max-width: 300px; margin: 0 auto; }
+        footer { display: flex; justify-content: space-between; padding: 20px 0; }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Configuracion de cuentas</h1>
+    <div class="container">
+        <h2>Configuración de Cuenta</h2>
+        <form>
+            <label>Email:</label>
+            <input type="email" required>
+            <label>Contraseña actual:</label>
+            <input type="password" required>
+            <label>Nueva contraseña:</label>
+            <input type="password">
+            <label>Repite la nueva contraseña:</label>
+            <input type="password">
+            <input type="submit" value="Guardar Cambios">
+        </form>
+    </div>
+    <footer>
+        <button onclick="location.href='creacionEventos.html'">Creacion de eventos</button>
+        <button onclick="location.href='mensajePrivados.html'">Mensajes Privados</button>
+    </footer>
+</body>
+</html>
